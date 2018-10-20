@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Sat Oct 20 18:28:12 CDT 2018
+1.base=/Users/aayushshah/Desktop/TestLibMuseAndroid/app/build/intermediates/transforms/mergeJniLibs/debug/0
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=NATIVE_RESOURCE
+0.path=classes.dex
+0.set=DEX
+0.base=/Users/aayushshah/Desktop/TestLibMuseAndroid/app/build/intermediates/transforms/dexMerger/debug/0
+1.path=lib/armeabi-v7a/libmuse_android.so

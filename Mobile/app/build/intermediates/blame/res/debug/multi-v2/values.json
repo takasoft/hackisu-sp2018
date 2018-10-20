@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/aayushshah/Desktop/TestLibMuseAndroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "186,510",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "472,665"
+                    },
+                    "to": {
+                        "startLines": "24,31",
+                        "startColumns": "4,4",
+                        "startOffsets": "1381,1672",
+                        "endLines": "30,33",
+                        "endColumns": "12,12",
+                        "endOffsets": "1667,1827"
+                    }
+                },
+                {
+                    "source": "/Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "89,147",
+                        "endColumns": "57,55",
+                        "endOffsets": "142,198"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                },
+                {
+                    "source": "/Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "12,5,3,15,6,8,18,11,4,10,16,19,17,22,21,23,9,7,14,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "484,156,56,629,209,307,785,442,103,401,681,823,738,957,878,1199,357,253,583,538",
+                        "endColumns": "53,52,46,51,43,49,37,41,52,40,56,53,46,241,78,69,43,53,45,44",
+                        "endOffsets": "533,204,98,676,248,352,818,479,151,437,733,872,780,1194,952,1264,396,302,624,578"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "169,223,276,323,375,419,469,507,549,602,643,700,754,801,1043,1122,1192,1236,1290,1336",
+                        "endColumns": "53,52,46,51,43,49,37,41,52,40,56,53,46,241,78,69,43,53,45,44",
+                        "endOffsets": "218,271,318,370,414,464,502,544,597,638,695,749,796,1038,1117,1187,1231,1285,1331,1376"
+                    }
+                }
+            ]
+        }
+    ]
+}
