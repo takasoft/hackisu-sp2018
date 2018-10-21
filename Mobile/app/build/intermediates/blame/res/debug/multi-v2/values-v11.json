@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/aayushshah/Desktop/TestLibMuseAndroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "outputFile": "/Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
             "map": [
                 {
-                    "source": "/Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/res/values-v11/styles.xml",
+                    "source": "/Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/res/values-v11/styles.xml",
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",

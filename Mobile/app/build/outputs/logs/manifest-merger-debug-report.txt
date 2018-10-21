@@ -1,49 +1,56 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:2:1-32:12
+ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:2:1-32:12
 MERGED from [com.android.support:support-v4:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/bd256928e9567d509dab36bcbdb6aec9/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.volley:volley:1.1.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/4a7c9bb0487747b99823c9012b564109/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ee38809ca9055aa21af92a7b36f41c55/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-media-compat:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/7d81cd097db3e330c02b15feda77de1c/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/45aa386f2de4a970a9f9fb4eab30701f/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/3bac71c0281fdb0589980a2268c3366f/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/9bcf0ca548d1a116d11c6e509a62f4dd/AndroidManifest.xml:17:1-31:12
-INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:2:1-32:12
 	package
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:3:5-45
-		INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:3:5-45
+		INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:5:5-30
-		INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:4:5-28
-		INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:7:22-64
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:7:5-68
+ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:8:5-68
 	android:name
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:7:22-65
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:8:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:8:5-74
+ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:9:5-74
 	android:name
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:8:22-71
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:9:22-71
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:9:5-81
+ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:9:22-78
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:10:22-78
 uses-sdk
-ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:12:5-14:41
-INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:12:5-14:41
+ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:13:5-14:41
+INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:13:5-14:41
 MERGED from [com.android.support:support-v4:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/bd256928e9567d509dab36bcbdb6aec9/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/bd256928e9567d509dab36bcbdb6aec9/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.volley:volley:1.1.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/4a7c9bb0487747b99823c9012b564109/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/4a7c9bb0487747b99823c9012b564109/AndroidManifest.xml:7:5-43
 MERGED from [com.android.support:support-fragment:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ee38809ca9055aa21af92a7b36f41c55/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-fragment:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ee38809ca9055aa21af92a7b36f41c55/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/7d81cd097db3e330c02b15feda77de1c/AndroidManifest.xml:21:5-23:63
@@ -54,19 +61,21 @@ MERGED from [com.android.support:support-core-ui:25.3.1] /Users/aayushshah/.grad
 MERGED from [com.android.support:support-core-ui:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/3bac71c0281fdb0589980a2268c3366f/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/9bcf0ca548d1a116d11c6e509a62f4dd/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/9bcf0ca548d1a116d11c6e509a62f4dd/AndroidManifest.xml:21:5-23:58
-INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:12:5-14:41
+INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:13:5-14:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/bd256928e9567d509dab36bcbdb6aec9/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:14:9-38
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:14:9-38
 	android:minSdkVersion
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:13:9-35
-		INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:13:5-14:41
+		INJECTED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:15:5-30:19
+ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:15:5-30:19
 MERGED from [com.android.support:support-v4:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/bd256928e9567d509dab36bcbdb6aec9/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/bd256928e9567d509dab36bcbdb6aec9/AndroidManifest.xml:29:5-20
+MERGED from [com.android.volley:volley:1.1.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/4a7c9bb0487747b99823c9012b564109/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/4a7c9bb0487747b99823c9012b564109/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ee38809ca9055aa21af92a7b36f41c55/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ee38809ca9055aa21af92a7b36f41c55/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/7d81cd097db3e330c02b15feda77de1c/AndroidManifest.xml:29:5-20
@@ -78,31 +87,31 @@ MERGED from [com.android.support:support-core-ui:25.3.1] /Users/aayushshah/.grad
 MERGED from [com.android.support:support-compat:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/9bcf0ca548d1a116d11c6e509a62f4dd/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/9bcf0ca548d1a116d11c6e509a62f4dd/AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:18:9-41
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:18:9-41
 	android:icon
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:17:9-45
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:17:9-45
 	android:allowBackup
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:19:9-40
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:19:9-40
 activity#com.choosemuse.example.libmuse.MainActivity
-ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:20:9-29:20
+ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:20:9-29:20
 	android:screenOrientation
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:22:13-49
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:22:13-49
 	android:label
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:23:13-45
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:23:13-45
 	android:name
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:21:13-71
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:21:13-71
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:24:13-28:29
+ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:25:17-69
+ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:25:25-66
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:27:17-77
+ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from /Users/aayushshah/Desktop/TestLibMuseAndroid/app/src/main/AndroidManifest.xml:27:27-74
+		ADDED from /Users/aayushshah/Desktop/hackisu-sp2018/Mobile/app/src/main/AndroidManifest.xml:27:27-74
 meta-data#android.support.VERSION
 ADDED from [com.android.support:support-v4:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/bd256928e9567d509dab36bcbdb6aec9/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-fragment:25.3.1] /Users/aayushshah/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/ee38809ca9055aa21af92a7b36f41c55/AndroidManifest.xml:25:5-27:34

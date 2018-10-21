@@ -5,14 +5,36 @@
 
 package com.choosemuse.example.libmuse;
 
+import java.io.DataOutputStream;
 import java.io.File;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.lang.ref.WeakReference;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
+import java.util.Locale;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 
 import java.net.HttpURLConnection;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Cache;
+import com.android.volley.Network;
+import com.android.volley.NetworkResponse;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.toolbox.BasicNetwork;
+import com.android.volley.toolbox.DiskBasedCache;
+import com.android.volley.toolbox.HurlStack;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.android.volley.VolleyError;
 import com.choosemuse.libmuse.Accelerometer;
 import com.choosemuse.libmuse.AnnotationData;
 import com.choosemuse.libmuse.ConnectionState;
@@ -35,12 +57,16 @@ import com.choosemuse.libmuse.MuseManagerAndroid;
 import com.choosemuse.libmuse.MuseVersion;
 import com.choosemuse.libmuse.Result;
 import com.choosemuse.libmuse.ResultLevel;
+import com.google.gson.GsonBuilder;
 
 import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.icu.text.SimpleDateFormat;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Looper;
@@ -57,6 +83,10 @@ import android.bluetooth.BluetoothAdapter;
 
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * This example will illustrate how to connect to a Muse headband,
@@ -456,9 +486,26 @@ public class MainActivity extends Activity implements OnClickListener {
             if (eegStale) {
                 updateEeg();
 
+                JSONArray jsonBody = new JSONArray();
+                try {
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.US);
+                    String formattedDate = sdf.format(new Date());
+                    JSONObject d = new JSONObject();
+                    d.put("userID", "steve");
+                    d.put("time", formattedDate);
+                    d.put("Q", eegBuffer[0]);
+                    d.put("R", eegBuffer[1]);
+                    d.put("S", eegBuffer[2]);
+                    d.put("T", eegBuffer[3]);
+                    jsonBody.put(0, d);
+                } catch(Exception e) {
+
+                }
+
+                sendData(jsonBody);
             }
             updateArtifact();
-            handler.postDelayed(tickUi, 1000 / 60);
+            handler.postDelayed(tickUi, 100);
         }
     };
 
@@ -468,6 +515,7 @@ public class MainActivity extends Activity implements OnClickListener {
      */
 
     private void updateEeg() {
+
         TextView tp9 = (TextView)findViewById(R.id.eeg_tp9);
         TextView fp1 = (TextView)findViewById(R.id.eeg_af7);
         TextView fp2 = (TextView)findViewById(R.id.eeg_af8);
@@ -476,12 +524,111 @@ public class MainActivity extends Activity implements OnClickListener {
         fp1.setText(String.format("%6.2f", eegBuffer[1]));
         fp2.setText(String.format("%6.2f", eegBuffer[2]));
         tp10.setText(String.format("%6.2f", eegBuffer[3]));
+
+
     }
     private void updateArtifact() {
         TextView blink = (TextView)findViewById(R.id.blink);
         blink.setText(artifactInfo);
 
+
     }
+
+    private void sendData(JSONArray jsonBody) {
+        String URL = "http://10.33.239.166:6001/collect";
+        /*
+        JSONArray jsonBody = new JSONArray();
+        try {
+            JSONObject d = new JSONObject();
+            jsonBody.put(0, d);
+            jsonBody.put(1, "BNK");
+        } catch(Exception e) {
+
+        }
+        */
+
+        final String requestBody = jsonBody.toString();
+
+        StringRequest postRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.i("VOLLEY", response);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e("VOLLEY", error.toString());
+            }
+        }) {
+            @Override
+            public String getBodyContentType() {
+                return "application/json; charset=utf-8";
+            }
+
+            @Override
+            public byte[] getBody() throws AuthFailureError {
+                try {
+                    return requestBody == null ? null : requestBody.getBytes("utf-8");
+                } catch (UnsupportedEncodingException uee) {
+                    System.out.println("Unsupported Encoding while trying to get the bytes of %s using %s" + requestBody + "utf-8");
+                    return null;
+                }
+            }
+
+        };
+
+
+        // This adds the request to the request queue
+        MySingleton.getInstance(MainActivity.this).addToRequestQueue(postRequest);
+    }
+
+    /*
+    private void sendData() {
+        //AsyncT asyncT = new AsyncT();
+        //asyncT.execute();
+
+        System.out.println("volley: starting");
+
+        try {
+
+            // Instantiate the RequestQueue.
+            Cache cache = new DiskBasedCache(getCacheDir(), 1024*1024);
+            Network network = new BasicNetwork(new HurlStack());
+            RequestQueue queue = new RequestQueue(cache, network);
+            queue.start();
+            String url = "http://10.33.239.166:6001";
+
+            System.out.println("volley: fuck");
+
+
+            // Request a string response from the provided URL.
+            StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                    new Response.Listener<String>() {
+                        @Override
+                        public void onResponse(String response) {
+                            // Display the first 500 characters of the response string.
+                            System.out.println("Volley: " + response.substring(0, 500));
+                        }
+                    }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    System.out.println("Volley: " + error);
+                }
+            });
+
+            System.out.println("volley: fuck2");
+
+            // Add the request to the RequestQueue.
+            queue.add(stringRequest);
+
+            System.out.println("volley: fuck3");
+
+
+        } catch(Exception e) {
+            System.out.println("Volley: " + e);
+        }
+    }
+    */
 
     //--------------------------------------
     // Listener translators
@@ -530,5 +677,35 @@ public class MainActivity extends Activity implements OnClickListener {
         public void receiveMuseArtifactPacket(final MuseArtifactPacket p, final Muse muse) {
             activityRef.get().receiveMuseArtifactPacket(p, muse);
         }
+    }
+}
+
+class MySingleton {
+    private static MySingleton mInstance;
+    private RequestQueue mRequestQueue;
+    private static Context mCtx;
+    private MySingleton(Context context) {
+        mCtx = context;
+        mRequestQueue = getRequestQueue();
+    }
+
+    public static synchronized MySingleton getInstance(Context context) {
+        if (mInstance == null) {
+            mInstance = new MySingleton(context);
+        }
+        return mInstance;
+    }
+
+    public RequestQueue getRequestQueue() {
+        if (mRequestQueue == null) {
+            // getApplicationContext() is key, it keeps you from leaking the
+            // Activity or BroadcastReceiver if someone passes one in.
+            mRequestQueue = Volley.newRequestQueue(mCtx.getApplicationContext());
+        }
+        return mRequestQueue;
+    }
+
+    public <T> void addToRequestQueue(Request<T> req) {
+        getRequestQueue().add(req);
     }
 }
