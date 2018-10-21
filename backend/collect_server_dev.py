@@ -31,23 +31,54 @@ def collect():
                 raw_data = raw_data.decode('UTF-8')
                 raw_data = json.loads(raw_data)
 
+                print(raw_data)
+
                 data = []
                 for i in range(len(raw_data)):
                     data.append({
-                        'measurement': 'data',
+                        'measurement': 'raw',
                         'tags': {
-                            'userID': raw_data[i]['userID']
+                            'userID': raw_data[i]['userID'],
+                            'activity': raw_data[i]['Activity']
                         },
                         'time': raw_data[i]['time'],
                         'fields': {
-                            'Q': raw_data[i]['Q'],
-                            'R': raw_data[i]['R'],
-                            'S': raw_data[i]['S'],
-                            'T': raw_data[i]['T'],
+                            'Q': float(raw_data[i]['raw']['Q']),
+                            'R': float(raw_data[i]['raw']['R']),
+                            'S': float(raw_data[i]['raw']['S']),
+                            'T': float(raw_data[i]['raw']['T'])
+                        }
+                    })
+                    data.append({
+                        'measurement': 'alpha',
+                        'tags': {
+                            'userID': raw_data[i]['userID'],
+                            'activity': raw_data[i]['Activity']
+                        },
+                        'time': raw_data[i]['time'],
+                        'fields': {
+                            'Q': float(raw_data[i]['alpha']['Q']),
+                            'R': float(raw_data[i]['alpha']['R']),
+                            'S': float(raw_data[i]['alpha']['S']),
+                            'T': float(raw_data[i]['alpha']['T'])
+                        }
+                    })
+                    data.append({
+                        'measurement': 'gamma',
+                        'tags': {
+                            'userID': raw_data[i]['userID'],
+                            'activity': raw_data[i]['Activity']
+                        },
+                        'time': raw_data[i]['time'],
+                        'fields': {
+                            'Q': float(raw_data[i]['gamma']['Q']),
+                            'R': float(raw_data[i]['gamma']['R']),
+                            'S': float(raw_data[i]['gamma']['S']),
+                            'T': float(raw_data[i]['gamma']['T'])
                         }
                     })
 
-                # print(data)
+                print(data)
 
                 client.write_points(data)
 
